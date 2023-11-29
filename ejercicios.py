@@ -121,6 +121,18 @@ resultado=facto_numero(n)
 print("El numero factorial es: ",resultado)
 
 #Problema 9
+def omitir_vocales(cadena):
+    vocales = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    nueva_cadena = ''
+    for letra in cadena:
+        if letra not in vocales:
+            nueva_cadena += letra
+    return nueva_cadena
 
+texto = input("Ingrese una cadena de texto: ")
+texto_sin_vocales = omitir_vocales(texto)
+print("Texto sin vocales:", texto_sin_vocales)
+
+#Problema 10
 
 
